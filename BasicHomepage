@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoot Spotters</title>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2e2e2e;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: white;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .nav-buttons button {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 20px;
+      background-color: #ff7300;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero {
+      background-color: #555;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 48px;
+      color: #ff7300;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero .cta {
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: none;
+      background-color: #ff7300;
+      color: white;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown select {
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Owl_face.svg/1200px-Owl_face.svg.png" alt="Hoot Spotters Logo">
+    </div>
+    <div class="nav-buttons">
+      <div class="dropdown">
+        <select>
+          <option>Select Campus</option>
+          <option>Main Campus</option>
+          <option>Engineering Hall</option>
+          <option>Library Floors</option>
+          <option>North Dorms</option>
+        </select>
+      </div>
+      <button>Real-Time Map</button>
+      <button>Analytics</button>
+      <button>Login</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Hoot Spotters</h1>
+    <p>Know Who’s in the Room—At a Glance</p>
+    <button class="cta">View Occupancy</button>
+  </section>
+</body>
+</html>
